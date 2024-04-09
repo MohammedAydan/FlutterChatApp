@@ -1,0 +1,320 @@
+[
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "import 'package:chatapp/logic/controllers/auth_controller.dart';"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "import 'package:chatapp/logic/logic/home_logic.dart';"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "import 'package:chatapp/logic/logic/logic.dart';"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "import 'package:chatapp/logic/models/chat_model_f.dart';"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "import 'package:chatapp/logic/models/msg_model.dart';"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "import 'package:flutter/material.dart';"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "import 'package:get/get.dart';"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": ""
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "class GetLastMessage extends StatelessWidget {"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "  const GetLastMessage({"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "    super.key"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "    required this.authController"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "    required this.chatModelF"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "  });"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": ""
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "  final AuthController authController;"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "  final ChatModelF chatModelF;"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": ""
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "  @override"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "  Widget build(BuildContext context) {"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "    if (chatModelF.lastMessageId == null) {"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "      return SizedBox("
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "        child: Text("
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "          \"no messages \""
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "          overflow: TextOverflow.ellipsis"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "          style: TextStyle("
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "            color: Colors.grey.shade400"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "          )"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "        )"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "      );"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "    }"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "    return StreamBuilder("
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "      stream: HomeLogic.getMessageById(authController.user!.uid"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "          chatModelF.user!.uid"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "      builder: (context"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "        if (!snapshot.hasData &&"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "            snapshot.connectionState == ConnectionState.waiting) {"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "          return const SizedBox();"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "        }"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "        if (!snapshot.hasData ||"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "            snapshot.data == null ||"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "            snapshot.data!.data() == null) {"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "          return const SizedBox();"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "        }"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": ""
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "        Msg? msg = Msg.fromJson("
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "          snapshot.data!.data() as Map<String"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "        );"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": ""
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "        bool isCurrentUserMessage = msg.userId == authController.user!.uid;"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "        return Row("
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "          mainAxisAlignment: MainAxisAlignment.spaceBetween"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "          crossAxisAlignment: CrossAxisAlignment.center"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "          children: ["
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "            Row("
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "              children: ["
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "                if (isCurrentUserMessage) ...["
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "                  Icon("
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "                    msg.readAt != null"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "                        ? Icons.done_all_rounded"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "                        : Icons.done_all_rounded"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "                    color: msg.readAt != null"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "                        ? MyMethods.blueColor2"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "                        : MyMethods.bgColor2"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "                    size: 15"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "                  )"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "                  const SizedBox(width: 5)"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "                ]"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "                SizedBox("
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "                  width: Get.width * 0.5"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "                  child: Text("
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "                    \"Message: ${msg.message}\""
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "                    overflow: TextOverflow.ellipsis"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "                    style: TextStyle("
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "                      color: Colors.grey.shade400"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "                    )"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "                  )"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "                )"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "              ]"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "            )"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "            Expanded("
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "              child: Text("
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "                ChatLogic.getFormattedDate(msg.createdAt!)"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "                style: TextStyle("
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "                  color: Colors.grey.shade400"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "                  fontSize: 12"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "                )"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "                textAlign: TextAlign.end"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "              )"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "            )"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "            if (msg.readAt == null && !isCurrentUserMessage) ...["
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "              const SizedBox(width: 5)"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "              const Icon("
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "                Icons.radio_button_checked"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "                color: MyMethods.blueColor2"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "                size: 15"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "              )"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "              const SizedBox(width: 5)"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "            ]"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "          ]"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "        );"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "      }"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "    );"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "  }"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": "}"
+	},
+	{
+		"import 'package:chatapp/logic/MyMethods/my_methods.dart';": ""
+	}
+]

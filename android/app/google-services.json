@@ -1,0 +1,214 @@
+{
+  "project_info": {
+    "project_number": "419151198841",
+    "project_id": "blog-mag-d37a8",
+    "storage_bucket": "blog-mag-d37a8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:419151198841:android:44563c8f8270e65670f2a8",
+        "android_client_info": {
+          "package_name": "com.example.blog_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "419151198841-1nb94ka7l88nq3cfg04n19lr6qjllgsk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.blog_chat",
+            "certificate_hash": "f10b1eb3c3765804935dd28eb8a8c193107d457e"
+          }
+        },
+        {
+          "client_id": "419151198841-4dshvjv6vo0q97qvjgkfjii4d7kvidaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVIi1IN41wDY2kIygnVIFIooyXrR_dcMk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "419151198841-4dshvjv6vo0q97qvjgkfjii4d7kvidaf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "419151198841-1vmap13la64mjurre6d8pkjhnetemo3t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.blogMag"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:419151198841:android:ef959aba815f645370f2a8",
+        "android_client_info": {
+          "package_name": "com.example.blog_mag"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "419151198841-4dshvjv6vo0q97qvjgkfjii4d7kvidaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVIi1IN41wDY2kIygnVIFIooyXrR_dcMk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "419151198841-4dshvjv6vo0q97qvjgkfjii4d7kvidaf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "419151198841-1vmap13la64mjurre6d8pkjhnetemo3t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.blogMag"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:419151198841:android:bd25639eae0af60c70f2a8",
+        "android_client_info": {
+          "package_name": "com.example.chat_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "419151198841-o1kjs55edjs3hqvie58vfvge2q5l5dcp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chat_app",
+            "certificate_hash": "f10b1eb3c3765804935dd28eb8a8c193107d457e"
+          }
+        },
+        {
+          "client_id": "419151198841-4dshvjv6vo0q97qvjgkfjii4d7kvidaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVIi1IN41wDY2kIygnVIFIooyXrR_dcMk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "419151198841-4dshvjv6vo0q97qvjgkfjii4d7kvidaf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "419151198841-1vmap13la64mjurre6d8pkjhnetemo3t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.blogMag"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:419151198841:android:76315036e95ce4ed70f2a8",
+        "android_client_info": {
+          "package_name": "com.example.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "419151198841-l5t55sl9k44qf2jjrug5n2vsl2svsk7t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chatapp",
+            "certificate_hash": "f10b1eb3c3765804935dd28eb8a8c193107d457e"
+          }
+        },
+        {
+          "client_id": "419151198841-4dshvjv6vo0q97qvjgkfjii4d7kvidaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVIi1IN41wDY2kIygnVIFIooyXrR_dcMk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "419151198841-4dshvjv6vo0q97qvjgkfjii4d7kvidaf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "419151198841-1vmap13la64mjurre6d8pkjhnetemo3t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.blogMag"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:419151198841:android:34ac078e1ad81af370f2a8",
+        "android_client_info": {
+          "package_name": "com.mag.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "419151198841-4dshvjv6vo0q97qvjgkfjii4d7kvidaf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVIi1IN41wDY2kIygnVIFIooyXrR_dcMk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "419151198841-4dshvjv6vo0q97qvjgkfjii4d7kvidaf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "419151198841-1vmap13la64mjurre6d8pkjhnetemo3t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.blogMag"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

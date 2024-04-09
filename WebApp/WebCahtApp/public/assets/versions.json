@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "version": "1.0.0",
+    "name": "ChatApp",
+    "url": "/"
+  },
+  {
+    "id": 2,
+    "version": "2.0.0",
+    "name": "ChatApp",
+    "url": "/"
+  },
+  {
+    "id": 3,
+    "version": "2.0.1",
+    "name": "ChatApp",
+    "url": "/"
+  }
+]

@@ -1,0 +1,242 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  width: 90%;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header .appData {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.header img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.header p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.content {
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.version {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.version h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.version span {
+  color: #666;
+  font-size: 18px;
+}
+
+a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+a:hover {
+  background-color: #0056b3;
+}
+
+/* /// */
+
+.add-alert-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #3333335d;
+}
+
+.add-alert-container .add-alert {
+  max-width: 500px;
+  width: 500px;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow: 0 0 10px #ccc;
+  display: block;
+}
+
+.add-alert-container .add-alert .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-alert-container .add-alert .header button {
+  width: 50px;
+  height: 50px;
+}
+
+.add-alert-container .add-alert input {
+  display: block;
+  padding: 15px;
+  width: 100%;
+  margin: 8px 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+
+.add-alert-container .add-alert button {
+  margin-top: 20px;
+  display: block;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #0056b3;
+  color: white;
+  cursor: pointer;
+}
+
+.add-alert-container .add-alert button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.add-alert-container .add-alert button:hover {
+  background-color: #0056b3;
+}
+
+.auth-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.auth-header .signin-with-google {
+  width: 40px;
+  height: 40px;
+  background-color: #007bff;
+  padding: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.auth-header .sign-out {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: red;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.auth-header .sign-out:hover {
+  background-color: rgb(202, 0, 0);
+}
+
+
+/* /// */
+
+@media (max-width: 540px) {
+  .container {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 0px;
+    box-shadow: 0 0 0;
+    padding: 30px;
+  }
+
+  .header img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .header p {
+    font-size: 20px;
+  }
+
+  .content h1 {
+    font-size: 28px;
+  }
+
+  .version h3 {
+    font-size: 18px;
+  }
+
+  .version span {
+    font-size: 16px;
+  }
+
+  a {
+    padding: 8px 16px;
+  }
+}
